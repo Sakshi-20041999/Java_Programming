@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Program Name : Program21_5
+//  Description  : Display numbers divisible by both 2 and 3
+//  Input        : Integer N
+//  Output       : Prints numbers divisible by 2 and 3
+//  Author       : Sakshi Santosh Jadhav
+//  Date         : 24/10/2025
+//
+////////////////////////////////////////////////////////////////////
+
+class Logic
+{
+    void printDivisibleBy2and3(int n)
+    {
+        System.out.println("Numbers divisible by both 2 and 3 are:");
+
+        for(int i = 1; i <= n; i++)
+        {
+            if(i % 2 == 0 && i % 3 == 0)
+            {
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println();
+    }
+}
+
+class Program21_5
+{
+    public static void main(String args[])
+    {
+        Logic obj = new Logic();
+        obj.printDivisibleBy2and3(30);
+    }
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//  Test Cases
+//
+//  Input  : 30
+//  Output : Numbers divisible by both 2 and 3 are:
+//           6 12 18 24 30
+//
+//  Input  : 20
+//  Output : Numbers divisible by both 2 and 3 are:
+//           6 12 18
+//
+////////////////////////////////////////////////////////////////////

@@ -1,0 +1,46 @@
+////////////////////////////////////////////////////////////////////
+//
+//  Program Name : Program26_3
+//  Description  : Print numbers from 1 to N with *
+//  Input        : Integer N
+//  Output       : Prints pattern: 1 * 2 * 3 * ...
+//  Author       : Sakshi Santosh Jadhav
+//  Date         : 20/11/2025
+//
+////////////////////////////////////////////////////////////////////
+
+import java.util.*;
+
+class Program26_3
+{
+    public static void Pattern(int iNo)
+    {
+        for(int i = 1; i <= iNo; i++)
+        {
+            System.out.print(i + "\t*\t");
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int iValue = 0;
+
+        System.out.println("Enter number of elements:");
+        iValue = sc.nextInt();
+
+        Pattern(iValue);
+    }
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//  Test Cases
+//
+//  Input  : 5
+//  Output : 1	*	2	*	3	*	4	*	5	*
+//
+//  Input  : 3
+//  Output : 1	*	2	*	3	*
+//
+////////////////////////////////////////////////////////////////////

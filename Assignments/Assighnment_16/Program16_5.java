@@ -1,0 +1,45 @@
+/////////////////////////////////////////////////////////////////////
+//
+//  Program Name : Program16_5
+//  Description  : Count digits in a number
+//  Author       : Sakshi Santosh Jadhav
+//  Date         : 22/10/2025
+//
+/////////////////////////////////////////////////////////////////////
+
+class Program16_5
+{
+    void countDigits(int num)
+    {
+        int count = 0;
+
+        while(num != 0)
+        {
+            count++;
+            num = num / 10;
+        }
+
+        System.out.println("Number of digits: " + count);
+    }
+
+////////////////////////////////////////////////////////////////////
+//
+//  Entry point function
+//
+////////////////////////////////////////////////////////////////////
+
+    public static void main(String args[])
+    {
+        Program16_5 obj = new Program16_5();
+        obj.countDigits(7865);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////
+//
+// Test Case
+//
+// Input  : 7865
+// Output : Number of digits: 4
+//
+/////////////////////////////////////////////////////////////////////
